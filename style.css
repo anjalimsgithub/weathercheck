@@ -1,0 +1,42 @@
+.containerdiv {
+   height: 500px;
+}
+
+.firstcol {
+   background-image: url(./image/img4.webp);
+   height: auto;
+   background-size: cover;
+}
+
+.secondcol {
+   background-image: url(./image/img1.webp);
+   height: auto;
+   background-size: cover;
+}
+
+.degree {
+   margin-top: 55px;
+   margin-left: 20px;
+   font-size: 100px;
+   font-family: 'Anton', sans-serif;
+}
+
+#placename {
+   margin-top: 80px;
+   margin-left: 20px;
+   font-size: 80px;
+   font-family: 'Arima', cursive;
+}
+
+#weatherdiscription {
+   margin-left: 20px;
+   font-size: 20px;
+}
+
+.headings {
+   font-family: 'Arima', cursive;
+}
+
+.main {
+   display: flex;
+}
