@@ -1,4 +1,4 @@
-.containerdiv {
+.maindiv {
    height: 500px;
 }
 
@@ -6,7 +6,7 @@
    background-image: url(./image/img4.webp);
    height: auto;
    background-size: cover;
-}
+  }
 
 .secondcol {
    background-image: url(./image/img1.webp);
@@ -23,8 +23,7 @@
 
 #placename {
    margin-top: 80px;
-   margin-left: 20px;
-   font-size: 80px;
+   font-size: 60px;
    font-family: 'Arima', cursive;
 }
 

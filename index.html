@@ -22,17 +22,11 @@
 </head>
 
 <body style="background-image:url(./image/img2.jpg);background-size: cover;">
-    <div class="container w-75 containerdiv mt-5">
+    <div class="container w-75 maindiv mt-5">
         <!--Row  -->
         <div class="row">
-            <!-- first col -->
-            <div class="col-8 firstcol">
-                <div id="temp"></div>
-                <p id="placename"></p>
-                <p id="weatherdiscription"></p>
-            </div>
             <!-- second col -->
-            <div class="col-4 secondcol">
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6 secondcol">
                 <h2 class="text-white text-center mt-2" style="font-family: 'Arima', cursive;">Weather Report</h2>
                 <!-- searchbox -->
                 <div class="input-group">
@@ -63,8 +57,13 @@
                     <p id="Pressure" class="text-white" style="font-size:12px ;"></p>
                 </div>
             </div>
+            <!-- first col -->
+            <div class="col-lg-8 col-md-6 col-sm-6 col-xs-6 firstcol">
+                <div id="temp"></div>
+                <p id="placename"></p>
+                <p id="weatherdiscription"></p>
+            </div>
         </div>
-    </div>
     </div>
 </body>
 <script>
