@@ -68,28 +68,40 @@
 </body>
 <script>
     function weather() {
-        let cityName = output.value
+        cityName = output.value
         fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=8ac5c4d57ba6a4b3dfcf622700447b1e`)
             .then(result => result.json())
             .then(cityweather => searchCity(cityweather))
     }
     function searchCity(cityweather) {
-        let cityName = output.value
-        if (cityName == cityweather.name) {
-            Countery_name.innerHTML = cityweather.sys.country
-            Humidity.innerHTML = cityweather.main.humidity
-            Wind.innerHTML = cityweather.wind.speed
-            Pressure.innerHTML = cityweather.main.pressure
-            temp.innerHTML = `<div class="degree">${Math.floor((cityweather.main.temp - 273))}<span id="degreecelsius"><sup>&#x2103</sup></span></div>`
-            placename.innerHTML = cityName
-            weatherdiscription.innerHTML = cityweather.weather[0].description
+        Countery_name.innerHTML = cityweather.sys.country
+        Humidity.innerHTML = cityweather.main.humidity
+        Wind.innerHTML = cityweather.wind.speed
+        Pressure.innerHTML = cityweather.main.pressure
+        temp.innerHTML = `<div class="degree">${Math.floor((cityweather.main.temp - 273))}<span id="degreecelsius"><sup>&#x2103</sup></span></div>`
+        placename.innerHTML = cityName
+        weatherdiscription.innerHTML = cityweather.weather[0].description
 
-        }
-        else {
-            alert('wrong entry')
-        }
+
 
     }
+    // function searchCity(cityweather) {
+    //     let cityName = output.value
+    //     if (cityName == cityweather.name) {
+    //         Countery_name.innerHTML = cityweather.sys.country
+    //         Humidity.innerHTML = cityweather.main.humidity
+    //         Wind.innerHTML = cityweather.wind.speed
+    //         Pressure.innerHTML = cityweather.main.pressure
+    //         temp.innerHTML = `<div class="degree">${Math.floor((cityweather.main.temp - 273))}<span id="degreecelsius"><sup>&#x2103</sup></span></div>`
+    //         placename.innerHTML = cityName
+    //         weatherdiscription.innerHTML = cityweather.weather[0].description
+
+    //     }
+    //     else {
+    //         alert('wrong entry')
+    //     }
+
+    // }
 
 </script>
 
